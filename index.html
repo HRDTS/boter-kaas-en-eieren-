@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./javascript.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <p class="headerText">Tic-Tac-Toe</p>
+        <form id="form">
+            <div class="nameFields">
+                <label for="playerName1"> Player 1 name: </label>
+                <input type="text" name="playerName1" id="playerName1" placeholder="Jeff">
+        
+                <label for="playerName2"> Player 2 name: </label>
+                <input type="text" name="playerName2" id="playerName2" placeholder="Bob">
+        
+                <button type="submit" class="nameButton">Enter Names</button>
+            </div>
+            
+
+        </form>
+        <button class="resetButton" type="button">Restart Game</button>
+        <div class="container">
+            <div onclick="gameController('A', 0,1).control(), gameResult()" class="gameInput" id="one"></div>
+            <div onclick="gameController('A', 1,1).control(), gameResult()" class="gameInput" id="two"></div>
+            <div onclick="gameController('A', 2,2).control(), gameResult()" class="gameInput" id="three"></div>
+            <div onclick="gameController('B', 0,1).control(), gameResult()" class="gameInput" id="four"></div>
+            <div onclick="gameController('B', 1,1).control(), gameResult()" class="gameInput" id="five"></div>
+            <div onclick="gameController('B', 2,2).control(), gameResult()" class="gameInput" id="six"></div>
+            <div onclick="gameController('C', 0,1).control(), gameResult()" class="gameInput" id="seven"></div>
+            <div onclick="gameController('C', 1,1).control(), gameResult()" class="gameInput" id="eight"></div>
+            <div onclick="gameController('C', 2,2).control(), gameResult()" class="gameInput" id="nine"></div>
+        </div>
+
+
+    </div>
+
+    
+</body>
+</html>
